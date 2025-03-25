@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PitchPerfect – AI Resume Optimizer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #333;
+    }
+    header {
+      background-color: #0d47a1;
+      color: white;
+      padding: 3rem 1rem 2rem 1rem;
+      text-align: center;
+    }
+    .logo {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    p.tagline {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+      font-weight: 300;
+    }
+    main {
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1.5rem;
+      color: #0d47a1;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .feature {
+      flex: 1 1 250px;
+      max-width: 280px;
+      background-color: #f5f5f5;
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .feature img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 1rem;
+    }
+    .cta {
+      margin-top: 3rem;
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .cta a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1rem 1.5rem;
+      background-color: #43a047;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background-color 0.2s ease;
+    }
+    .cta a:hover {
+      background-color: #388e3c;
+    }
+    .cta a img {
+      width: 20px;
+      height: 20px;
+    }
+    .testimonials {
+      margin-top: 4rem;
+      background-color: #f9f9f9;
+      padding: 3rem 1rem;
+      border-top: 1px solid #ddd;
+    }
+    .testimonial-carousel {
+      display: flex;
+      overflow-x: auto;
+      gap: 2rem;
+      scroll-snap-type: x mandatory;
+    }
+    .testimonial {
+      min-width: 300px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      padding: 1.5rem;
+      scroll-snap-align: center;
+      text-align: left;
+    }
+    .testimonial img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+    .testimonial strong {
+      display: block;
+      margin-top: 0.5rem;
+    }
+    .sample-preview {
+      margin-top: 4rem;
+    }
+    .sample-preview a {
+      color: #0d47a1;
+      text-decoration: underline;
+      font-weight: 500;
+    }
+    footer {
+      margin-top: 4rem;
+      padding: 1.5rem;
+      text-align: center;
+      background-color: #f1f1f1;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 768px) {
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://cdn-icons-png.flaticon.com/512/2989/2989988.png" alt="PitchPerfect Logo" class="logo" />
+    <h1>PitchPerfect</h1>
+    <p class="tagline">AI-powered resume optimization for job-winning results</p>
+  </header>
+
+  <main>
+    <h2>Why PitchPerfect?</h2>
+    <p>
+      Tired of sending resumes and hearing nothing back? PitchPerfect uses AI to tailor your resume to job descriptions, ensuring your application gets noticed.
+    </p>
+
+    <h2>What You’ll Get</h2>
+    <div class="features">
+      <div class="feature">
+        <img src="https://cdn-icons-png.flaticon.com/512/1041/1041916.png" alt="Keyword Match Icon" />
+        <p><strong>Keyword Matching</strong><br/>Tailored suggestions based on job descriptions</p>
+      </div>
+      <div class="feature">
+        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Content Refinement Icon" />
+        <p><strong>Content Refinement</strong><br/>Make your resume clearer, sharper, and more impactful</p>
+      </div>
+      <div class="feature">
+        <img src="https://cdn-icons-png.flaticon.com/512/2462/2462719.png" alt="Instant Feedback Icon" />
+        <p><strong>Instant Feedback</strong><br/>Upload your resume and get AI feedback in seconds</p>
+      </div>
+    </div>
+
+    <div class="cta">
+      <a href="https://forms.gle/B23yiFmgB6ie3MmZA" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/992/992651.png" alt="Clipboard Icon" />
+        Resume Feedback
+      </a>
+      <a href="https://forms.gle/B23yiFmgB6ie3MmZA?entry=sourceB" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828919.png" alt="Target Icon" />
+        Optimize for a Job
+      </a>
+    </div>
+
+    <div class="sample-preview">
+  <h2>Before vs. After: A Resume Glow-Up</h2>
+  <p>
+    Meet <strong>Ernie Macmillan</strong> – a mildly panicked MBA student who once wrote "objective: get a job and stuff" on his resume. Before PitchPerfect, he listed owl whispering and wand polishing under skills.
+  </p>
+  <p>
+    After a few prompts and some AI-powered finesse, Ernie's resume now screams "PM-ready" instead of "please hire me I know magic." The transformation is real.
+  </p>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-top: 2rem;">
+    <div style="flex: 1 1 300px; max-width: 400px;">
+      <iframe src="https://docs.google.com/document/d/11vZvaVUDj2I7zaVz6-sqgE2AIjayIHBy/preview" width="100%" height="300px" style="border:1px solid #ccc"></iframe>
+      <p><a href="https://docs.google.com/document/d/11vZvaVUDj2I7zaVz6-sqgE2AIjayIHBy/edit?usp=sharing" target="_blank">🧹 View Ernie's Resume – Before Optimization</a></p>
+    </div>
+    <div style="flex: 1 1 300px; max-width: 400px;">
+      <iframe src="https://docs.google.com/document/d/1QtePucp236UJ1lrShAH0SniBNtgkar20/preview" width="100%" height="300px" style="border:1px solid #ccc"></iframe>
+      <p><a href="https://docs.google.com/document/d/1QtePucp236UJ1lrShAH0SniBNtgkar20/edit?usp=sharing" target="_blank">✨ View Ernie's Resume – After PitchPerfect</a></p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <section class="testimonials">
+      <h2>What Users Are Saying</h2>
+      <div class="testimonial-carousel">
+        <div class="testimonial">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User photo">
+          "PitchPerfect helped me get interviews at 3 companies in a week. The keyword suggestions were spot on."
+          <strong>– Priya S., Product Manager</strong>
+        </div>
+        <div class="testimonial">
+          <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="User photo">
+          "As someone switching careers, the content refinement feature made my resume so much stronger. Highly recommend it!"
+          <strong>– Michael T., Aspiring Data Analyst</strong>
+        </div>
+        <div class="testimonial">
+          <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="User photo">
+          "Super intuitive and fast. I uploaded my resume and got feedback in less than 30 seconds."
+          <strong>– Sara L., MBA Student</strong>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 PitchPerfect. Made with 💡 at Harvard Business School.
+  </footer>
+</body>
+</html>
